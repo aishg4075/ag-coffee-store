@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG Brew Lab | Drops</title>
+  <meta name="description" content="Track upcoming AG Brew Lab limited drops and live limited inventory." />
+  <link rel="canonical" href="./drops.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AG Brew Lab | Drops" />
+  <meta property="og:description" content="Track upcoming AG Brew Lab limited drops and live limited inventory." />
+  <meta property="og:image" content="./assets/editorial/hero-pourover-station.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AG Brew Lab | Drops" />
+  <meta name="twitter:description" content="Track upcoming AG Brew Lab limited drops and live limited inventory." />
+  <meta name="twitter:image" content="./assets/editorial/hero-pourover-station.jpg" />
+  <link rel="icon" href="./assets/products/matcha-zero-cloud.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="./js/theme-init.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="drops">
+  <div class="bg-noise" aria-hidden="true"></div>
+  <header id="siteHeader"></header>
+
+  <main class="page-shell">
+    <section class="section hero-wrap hero-compact">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="kicker">Drop Control Room</p>
+          <h1 class="hero-title">Upcoming capsules and limited inventory windows.</h1>
+          <p class="lead">Friday 7PM launches, finite stock, and clear theme direction for each release.</p>
+
+          <div class="timer-strip">
+            <p class="note">Countdown to next scheduled drop</p>
+            <div class="timer-grid" aria-live="polite">
+              <div><span id="dropDays">00</span><small>Days</small></div>
+              <div><span id="dropHours">00</span><small>Hours</small></div>
+              <div><span id="dropMinutes">00</span><small>Minutes</small></div>
+              <div><span id="dropSeconds">00</span><small>Seconds</small></div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <article class="card">
+            <h3>Drop Rules</h3>
+            <div class="tag-row mt-sm">
+              <span class="tag">Friday 7PM</span>
+              <span class="tag">Finite units</span>
+              <span class="tag">No forced restocks</span>
+            </div>
+            <p class="mt-sm">
+              “Only X made” badges map to real inventory caps, then move to archive once sold out.
+            </p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section grid-2">
+      <article class="card">
+        <h3>Drop timeline</h3>
+        <div id="dropTimeline" class="timeline mt-md"></div>
+      </article>
+      <article class="card">
+        <h3>Current release focus</h3>
+        <p>Neon Bloom mixes bright coffee, ceremonial matcha, and utility gear with matcha + chrome accents.</p>
+        <img
+          src="assets/editorial/hero-pourover-station.jpg"
+          alt="Coffee setup"
+          class="feature-image mt-md"
+          width="960"
+          height="640"
+          loading="lazy"
+        />
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">Limited items live now</h2>
+        <p>Quick-view and cart-ready for active drop products.</p>
+      </div>
+      <div class="product-grid" id="dropProductGrid"></div>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+
+  <script type="module" src="./js/common.js"></script>
+  <script type="module" src="./js/drops.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG Brew Lab | Cart</title>
+  <meta name="description" content="Review your AG Brew Lab cart and move to checkout." />
+  <link rel="canonical" href="./cart.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AG Brew Lab | Cart" />
+  <meta property="og:description" content="Review your AG Brew Lab cart and move to checkout." />
+  <meta property="og:image" content="./assets/editorial/hero-espresso-beans.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AG Brew Lab | Cart" />
+  <meta name="twitter:description" content="Review your AG Brew Lab cart and move to checkout." />
+  <meta name="twitter:image" content="./assets/editorial/hero-espresso-beans.jpg" />
+  <link rel="icon" href="./assets/products/matcha-zero-cloud.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="./js/theme-init.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="cart">
+  <div class="bg-noise" aria-hidden="true"></div>
+  <header id="siteHeader"></header>
+
+  <main class="page-shell">
+    <section class="section">
+      <p class="kicker">Cart</p>
+      <h1 class="section-title">Review your ritual stack</h1>
+      <p class="lead">Adjust quantities and confirm totals before payment.</p>
+      <p class="note">Cart data is saved in your browser on this device.</p>
+
+      <div class="grid-2 stack-start mt-md">
+        <div>
+          <div class="list-grid" id="cartList"></div>
+          <p id="cartEmpty" class="empty-state hidden">Your cart is empty. Start in <a href="./shop.html">shop</a>.</p>
+        </div>
+
+        <aside class="summary-card">
+          <h3>Order summary</h3>
+          <div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+          <div class="summary-line"><span>Shipping</span><strong id="cartShipping">$0.00</strong></div>
+          <div class="summary-line total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+          <button id="goCheckout" class="btn btn-primary" type="button">Proceed to checkout</button>
+          <a class="btn btn-secondary" href="./wishlist.html">Open wishlist</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+
+  <script type="module" src="./js/common.js"></script>
+  <script type="module" src="./js/cart.js"></script>
+</body>
+</html>

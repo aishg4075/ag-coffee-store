@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG Brew Lab | Shop</title>
+  <meta name="description" content="Shop AG Brew Lab coffee, matcha, ritual gear and add-ons." />
+  <link rel="canonical" href="./shop.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AG Brew Lab | Shop" />
+  <meta property="og:description" content="Shop AG Brew Lab coffee, matcha, ritual gear and add-ons." />
+  <meta property="og:image" content="./assets/editorial/hero-matcha-tools.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AG Brew Lab | Shop" />
+  <meta name="twitter:description" content="Shop AG Brew Lab coffee, matcha, ritual gear and add-ons." />
+  <meta name="twitter:image" content="./assets/editorial/hero-matcha-tools.jpg" />
+  <link rel="icon" href="./assets/products/matcha-zero-cloud.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="./js/theme-init.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="shop">
+  <div class="bg-noise" aria-hidden="true"></div>
+  <header id="siteHeader"></header>
+
+  <main class="page-shell">
+    <section class="section">
+      <p class="kicker">Shop</p>
+      <h1 class="section-title">Coffee, Matcha, Gear, Add-ons</h1>
+      <p class="lead">
+        Every product card includes real photography and a quick-view panel for deeper product details before adding to cart.
+      </p>
+
+      <div class="controls" role="region" aria-label="Product filters">
+        <label>
+          Filter search
+          <input id="filterSearch" type="text" placeholder="Type: matcha, espresso, tote" />
+        </label>
+        <label>
+          Category
+          <select id="filterCategory">
+            <option value="all">All categories</option>
+            <option value="coffee">Coffee</option>
+            <option value="matcha">Matcha</option>
+            <option value="gear">Gear</option>
+            <option value="add-on">Add-ons</option>
+          </select>
+        </label>
+        <label>
+          Profile
+          <select id="filterProfile">
+            <option value="all">All profiles</option>
+            <option value="bright">Bright + Fruity</option>
+            <option value="deep">Deep + Chocolate</option>
+            <option value="umami">Creamy Umami</option>
+            <option value="balanced">Balanced</option>
+          </select>
+        </label>
+        <label>
+          Sort
+          <select id="filterSort">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="low-high">Price low to high</option>
+            <option value="high-low">Price high to low</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="quick-info">Catalog status: <strong id="shopCount">0 items</strong></p>
+      <div class="product-grid" id="shopGrid"></div>
+      <p id="shopEmpty" class="empty-state hidden">No products match this filter set. Try a wider query.</p>
+      <div class="load-more-wrap">
+        <button id="shopLoadMore" class="btn btn-secondary hidden" type="button">Load more</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+
+  <script type="module" src="./js/common.js"></script>
+  <script type="module" src="./js/shop.js"></script>
+</body>
+</html>

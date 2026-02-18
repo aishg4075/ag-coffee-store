@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG Brew Lab | Home</title>
+  <meta name="description" content="Founder-led coffee + matcha drops by Aishwarya Gawali." />
+  <link rel="canonical" href="./index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AG Brew Lab | Home" />
+  <meta property="og:description" content="Founder-led coffee + matcha drops by Aishwarya Gawali." />
+  <meta property="og:image" content="./assets/editorial/hero-espresso-beans.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AG Brew Lab | Home" />
+  <meta name="twitter:description" content="Founder-led coffee + matcha drops by Aishwarya Gawali." />
+  <meta name="twitter:image" content="./assets/editorial/hero-espresso-beans.jpg" />
+  <link rel="icon" href="./assets/products/matcha-zero-cloud.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="./js/theme-init.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="home">
+  <div class="bg-noise" aria-hidden="true"></div>
+  <header id="siteHeader"></header>
+
+  <main class="page-shell">
+    <section class="section hero-wrap">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="kicker">AG Velocity Brew System</p>
+          <h1 class="hero-title">Sports mindset. Street energy. Coffee and matcha with intent.</h1>
+          <p class="lead">
+            AG Brew Lab by Aishwarya Gawali blends performance rituals with design-first drops. Weekly capsules, real
+            inventory limits, and brew profiles tuned for focus.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./shop.html">Shop Current Drop</a>
+            <a class="btn btn-secondary" href="./drops.html">View Drop Calendar</a>
+          </div>
+
+          <div class="timer-strip">
+            <p class="note">Next Friday drop countdown</p>
+            <div class="timer-grid" aria-live="polite">
+              <div><span id="homeDays">00</span><small>Days</small></div>
+              <div><span id="homeHours">00</span><small>Hours</small></div>
+              <div><span id="homeMinutes">00</span><small>Minutes</small></div>
+              <div><span id="homeSeconds">00</span><small>Seconds</small></div>
+            </div>
+          </div>
+
+          <div class="marquee" aria-hidden="true">
+            <span>LIMITED RUNS</span>
+            <span>REAL INVENTORY CAPS</span>
+            <span>FOUNDER CURATED</span>
+            <span>BREW FOR MOMENTUM</span>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="mosaic">
+            <img
+              src="assets/editorial/hero-espresso-beans.jpg"
+              alt="Espresso and beans"
+              width="960"
+              height="640"
+              loading="eager"
+              fetchpriority="high"
+            />
+            <div class="mock-card">
+              <strong>Drop Theme</strong>
+              <span>Neon Bloom</span>
+              <span>Only 50 hero units</span>
+            </div>
+            <img
+              src="assets/editorial/hero-matcha-tools.jpg"
+              alt="Matcha bowl and whisk"
+              width="960"
+              height="640"
+              loading="eager"
+            />
+            <img
+              src="assets/editorial/hero-pourover-station.jpg"
+              alt="Pour-over setup"
+              width="960"
+              height="640"
+              loading="eager"
+            />
+          </div>
+
+          <div class="grid-2">
+            <div class="stat-card"><strong>12+</strong><span>Drop capsules released</span></div>
+            <div class="stat-card"><strong>4.9/5</strong><span>Community taste score</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">Why AG Feels Different</h2>
+        <p>No generic catalog. Tight curated systems each week.</p>
+      </div>
+      <div class="feature-strip">
+        <article class="feature-tile">
+          <h3>Drop Architecture</h3>
+          <p>Fresh mini-collection every Friday with a clear release window and profile story.</p>
+        </article>
+        <article class="feature-tile">
+          <h3>Real Product Shots</h3>
+          <p>Shop cards use real product photography mapped to each item category and ritual use.</p>
+        </article>
+        <article class="feature-tile">
+          <h3>Founder-Led Curation</h3>
+          <p>Aishwarya selects flavor direction, visuals, and utility for every collection.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">Featured Right Now</h2>
+        <p>Quick add from home or open quick view in shop.</p>
+      </div>
+      <div class="product-grid" id="homeFeatured"></div>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+
+  <script type="module" src="./js/common.js"></script>
+  <script type="module" src="./js/home.js"></script>
+</body>
+</html>

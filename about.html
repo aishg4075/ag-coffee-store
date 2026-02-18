@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG Brew Lab | About</title>
+  <meta name="description" content="Founder story and contact desk for AG Brew Lab by Aishwarya Gawali." />
+  <link rel="canonical" href="./about.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AG Brew Lab | About" />
+  <meta property="og:description" content="Founder story and contact desk for AG Brew Lab by Aishwarya Gawali." />
+  <meta property="og:image" content="./assets/editorial/hero-matcha-tools.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AG Brew Lab | About" />
+  <meta name="twitter:description" content="Founder story and contact desk for AG Brew Lab by Aishwarya Gawali." />
+  <meta name="twitter:image" content="./assets/editorial/hero-matcha-tools.jpg" />
+  <link rel="icon" href="./assets/products/matcha-zero-cloud.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="./js/theme-init.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="about">
+  <div class="bg-noise" aria-hidden="true"></div>
+  <header id="siteHeader"></header>
+
+  <main class="page-shell">
+    <section class="section hero-wrap">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="kicker">Founder Story</p>
+          <h1 class="hero-title">Aishwarya Gawali</h1>
+          <p class="lead">
+            AG Brew Lab started as Aishwarya’s private performance ritual: testing coffee and matcha profiles against real
+            training days, late-night creative sessions, and high-focus work blocks. What began as a personal notebook of
+            brewing experiments evolved into a founder-led brand where every drop is built on utility, sensory precision,
+            and visual direction.
+          </p>
+          <p class="lead">
+            The operating principle is simple: no bloated catalog and no fake urgency. Each release is a compact capsule,
+            with strict inventory limits, clear tasting intent, and products that actually fit a fast-moving lifestyle.
+          </p>
+
+          <div class="grid-3 mt-md">
+            <div class="stat-card"><strong>12+</strong><span>Drop capsules shipped</span></div>
+            <div class="stat-card"><strong>50</strong><span>Max units for hero SKUs</span></div>
+            <div class="stat-card"><strong>4.9</strong><span>Avg ritual feedback score</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <img
+            src="assets/editorial/hero-matcha-tools.jpg"
+            alt="Matcha ritual tools on table"
+            class="hero-side-image"
+            width="960"
+            height="640"
+            loading="lazy"
+          />
+          <article class="card">
+            <h3>Founder Lens</h3>
+            <p>
+              Every AG product passes three filters: flavor integrity, workflow speed, and design consistency with the
+              weekly drop narrative.
+            </p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section grid-2">
+      <article class="card">
+        <h3>How AG Brew Lab Was Built</h3>
+        <div class="timeline mt-md">
+          <article class="timeline-item">
+            <strong>Phase 1 • Ritual Testing</strong>
+            <p>
+              Aishwarya began mapping brew profiles against energy curves: espresso for rapid activation, matcha for stable
+              focus, and decaf/roasted blends for recovery sessions.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <strong>Phase 2 • Drop Architecture</strong>
+            <p>
+              Instead of permanent cluttered shelves, AG adopted finite weekly collections with thematic colorways,
+              naming systems, and strict volume caps.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <strong>Phase 3 • Public Storefront</strong>
+            <p>
+              The brand launched as a founder-led store combining coffee, matcha, and ritual gear in one system designed
+              for athletes, creators, and high-output routines.
+            </p>
+          </article>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Core Principles</h3>
+        <div class="timeline mt-md">
+          <article class="timeline-item">
+            <strong>Performance-Driven Flavor</strong>
+            <p>Profiles are tuned by use case, not generic roast labels or trend copy.</p>
+          </article>
+          <article class="timeline-item">
+            <strong>Finite Inventory Integrity</strong>
+            <p>“Only X made” badges always correspond to actual capped units.</p>
+          </article>
+          <article class="timeline-item">
+            <strong>Design With Intent</strong>
+            <p>Each drop keeps coherent typography, tone, and color narrative across product and packaging.</p>
+          </article>
+          <article class="timeline-item">
+            <strong>Community Feedback Loop</strong>
+            <p>Tasting notes and ritual behavior from buyers directly influence upcoming drop calibration.</p>
+          </article>
+        </div>
+      </article>
+    </section>
+
+    <section class="section grid-2" id="contactPanel">
+      <article class="card">
+        <h3>Contact AG Team</h3>
+        <p>Use this form for support, wholesale, collaborations, or founder notes.</p>
+
+        <form id="contactForm" class="form-stack mt-md">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Topic
+            <select name="topic">
+              <option>Order support</option>
+              <option>Wholesale inquiry</option>
+              <option>Brand collaboration</option>
+              <option>General question</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell us what you need" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p id="contactFeedback" class="message" aria-live="polite"></p>
+        </form>
+        <p class="note">Form submissions are stored locally in your browser in this demo build.</p>
+      </article>
+
+      <article class="card">
+        <h3>Direct Channels</h3>
+        <p>For fast communication, use the direct channels below.</p>
+        <div class="tag-row mt-md">
+          <span class="tag">hello@agbrewlabs.com</span>
+          <span class="tag">@agbrewlabs</span>
+          <span class="tag">Mon-Sat 10AM-7PM</span>
+        </div>
+
+        <div class="timeline mt-lg">
+          <article class="timeline-item">
+            <strong>Wholesale / Studio Stock</strong>
+            <p>Include your expected monthly volume, city, and preferred product categories.</p>
+          </article>
+          <article class="timeline-item">
+            <strong>Brand Collaborations</strong>
+            <p>Share the concept brief, timeline, and intended distribution channel.</p>
+          </article>
+          <article class="timeline-item">
+            <strong>Order Support</strong>
+            <p>Mention order ID and product name so the team can prioritize fast resolution.</p>
+          </article>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+
+  <script type="module" src="./js/common.js"></script>
+  <script type="module" src="./js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG Brew Lab | Brew Guides</title>
+  <meta name="description" content="Brew guides and ratio tools for AG Brew Lab coffee and matcha." />
+  <link rel="canonical" href="./guides.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AG Brew Lab | Brew Guides" />
+  <meta property="og:description" content="Brew guides and ratio tools for AG Brew Lab coffee and matcha." />
+  <meta property="og:image" content="./assets/editorial/hero-pourover-station.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AG Brew Lab | Brew Guides" />
+  <meta name="twitter:description" content="Brew guides and ratio tools for AG Brew Lab coffee and matcha." />
+  <meta name="twitter:image" content="./assets/editorial/hero-pourover-station.jpg" />
+  <link rel="icon" href="./assets/products/matcha-zero-cloud.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="./js/theme-init.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="guides">
+  <div class="bg-noise" aria-hidden="true"></div>
+  <header id="siteHeader"></header>
+
+  <main class="page-shell">
+    <section class="section hero-wrap hero-compact">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="kicker">Brew Guides</p>
+          <h1 class="hero-title">Precise brew playbooks for coffee and matcha.</h1>
+          <p class="lead">Choose a method, follow structured steps, and dial ratios with quick calculator support.</p>
+        </div>
+        <aside class="hero-side">
+          <img
+            src="assets/editorial/hero-pourover-station.jpg"
+            alt="Pour-over station"
+            width="960"
+            height="640"
+            loading="eager"
+          />
+        </aside>
+      </div>
+    </section>
+
+    <section class="section grid-2 guide-layout">
+      <article class="card guide-library-card">
+        <div class="guide-toolbar">
+          <h3>Brew Option Library</h3>
+          <div id="guideFilters" class="chip-row"></div>
+        </div>
+        <p class="note">Methods include espresso, V60, AeroPress, French press, cold brew, and multiple matcha routines.</p>
+        <div id="guideList" class="guide-list"></div>
+      </article>
+
+      <aside class="guide-side-stack">
+        <article class="card">
+          <h3>Quick Ratio Calculator</h3>
+          <p>Generate serving-based coffee or matcha ratios with strength adjustments.</p>
+          <form id="brewCalcForm" class="form-stack mt-md">
+            <label>
+              Brew type
+              <select name="brewType">
+                <option value="coffee">Coffee</option>
+                <option value="matcha">Matcha</option>
+              </select>
+            </label>
+            <label>
+              Strength
+              <select name="strength">
+                <option value="light">Light</option>
+                <option value="medium" selected>Medium</option>
+                <option value="strong">Strong</option>
+              </select>
+            </label>
+            <label>
+              Servings
+              <input type="number" name="servings" value="1" min="1" />
+            </label>
+            <button class="btn btn-primary" type="submit">Calculate ratio</button>
+          </form>
+          <p id="brewCalcOutput" class="message" aria-live="polite">18.8g coffee + 300ml water (1:16 medium profile).</p>
+        </article>
+        <article class="card">
+          <h3>Dial-In Checklist</h3>
+          <div class="timeline mt-sm">
+            <article class="timeline-item">
+              <strong>If brew tastes sour</strong>
+              <p>Grind finer, raise water temp by 1-2C, and extend contact time slightly.</p>
+            </article>
+            <article class="timeline-item">
+              <strong>If brew tastes bitter</strong>
+              <p>Grind coarser, reduce temperature, and shorten total extraction time.</p>
+            </article>
+            <article class="timeline-item">
+              <strong>If body feels thin</strong>
+              <p>Increase dose 1-2g or reduce final yield to strengthen texture and sweetness.</p>
+            </article>
+          </div>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+
+  <script type="module" src="./js/common.js"></script>
+  <script type="module" src="./js/guides.js"></script>
+</body>
+</html>

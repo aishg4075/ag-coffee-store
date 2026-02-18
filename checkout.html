@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG Brew Lab | Checkout</title>
+  <meta name="description" content="Checkout AG Brew Lab orders using Stripe or Gumroad links." />
+  <link rel="canonical" href="./checkout.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AG Brew Lab | Checkout" />
+  <meta property="og:description" content="Checkout AG Brew Lab orders using Stripe or Gumroad links." />
+  <meta property="og:image" content="./assets/editorial/hero-espresso-beans.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AG Brew Lab | Checkout" />
+  <meta name="twitter:description" content="Checkout AG Brew Lab orders using Stripe or Gumroad links." />
+  <meta name="twitter:image" content="./assets/editorial/hero-espresso-beans.jpg" />
+  <link rel="icon" href="./assets/products/matcha-zero-cloud.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="./js/theme-init.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="checkout">
+  <div class="bg-noise" aria-hidden="true"></div>
+  <header id="siteHeader"></header>
+
+  <main class="page-shell">
+    <section class="section">
+      <p class="kicker">Checkout</p>
+      <h1 class="section-title">Finalize shipping details and payment gateway</h1>
+      <p class="lead">Save a local checkout draft, complete payment externally, then finalize your local order record.</p>
+      <p class="note">Checkout data is stored in your browser on this device.</p>
+
+      <div class="grid-2 stack-start mt-md">
+        <article class="card">
+          <h3>Shipping + payment</h3>
+          <form id="checkoutForm" class="form-grid mt-md">
+            <label>
+              Full name
+              <input type="text" name="fullName" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              City
+              <input type="text" name="city" required />
+            </label>
+            <label>
+              Payment gateway
+              <select id="paymentGateway" name="paymentGateway">
+                <option value="stripe">Stripe Payment Link</option>
+                <option value="gumroad">Gumroad</option>
+              </select>
+            </label>
+            <label class="full">
+              Notes
+              <textarea name="notes" rows="4" placeholder="Delivery notes"></textarea>
+            </label>
+            <button id="confirmOrder" class="btn btn-primary full" type="submit">Save payment draft</button>
+          </form>
+          <p id="checkoutFeedback" class="message" aria-live="polite"></p>
+          <div class="btn-row mt-md">
+            <a
+              id="payNow"
+              class="btn btn-secondary is-disabled"
+              href="https://gumroad.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-disabled="true"
+            >
+              Open payment link
+            </a>
+            <button id="completePayment" class="btn btn-primary" type="button" disabled>I completed payment</button>
+          </div>
+          <button id="discardDraft" class="btn btn-secondary mt-sm" type="button">Discard draft</button>
+        </article>
+
+        <aside class="summary-card">
+          <h3>Order summary</h3>
+          <p id="checkoutDraftState" class="quick-info">No draft saved yet.</p>
+          <div id="checkoutItems" class="list-grid"></div>
+          <p id="checkoutEmpty" class="empty-state hidden">Cart is empty. Add products in <a href="./shop.html">shop</a>.</p>
+          <div class="summary-line"><span>Subtotal</span><strong id="checkoutSubtotal">$0.00</strong></div>
+          <div class="summary-line"><span>Shipping</span><strong id="checkoutShipping">$0.00</strong></div>
+          <div class="summary-line total"><span>Total</span><strong id="checkoutTotal">$0.00</strong></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+
+  <script type="module" src="./js/common.js"></script>
+  <script type="module" src="./js/checkout.js"></script>
+</body>
+</html>

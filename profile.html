@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG Brew Lab | Profile</title>
+  <meta name="description" content="Manage your AG Brew Lab profile, preferences and account snapshot." />
+  <link rel="canonical" href="./profile.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AG Brew Lab | Profile" />
+  <meta property="og:description" content="Manage your AG Brew Lab profile, preferences and account snapshot." />
+  <meta property="og:image" content="./assets/editorial/hero-matcha-tools.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AG Brew Lab | Profile" />
+  <meta name="twitter:description" content="Manage your AG Brew Lab profile, preferences and account snapshot." />
+  <meta name="twitter:image" content="./assets/editorial/hero-matcha-tools.jpg" />
+  <link rel="icon" href="./assets/products/matcha-zero-cloud.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="./js/theme-init.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="profile">
+  <div class="bg-noise" aria-hidden="true"></div>
+  <header id="siteHeader"></header>
+
+  <main class="page-shell">
+    <section class="section">
+      <p class="kicker">Profile</p>
+      <h1 class="section-title">Your AG ritual profile</h1>
+      <p class="lead">Save personal details and brew preferences for quick repeat checkout.</p>
+      <p class="note">Profile details are stored only in your browser on this device.</p>
+
+      <div class="grid-2 mt-md stack-start">
+        <article class="card">
+          <h3>Personal details</h3>
+          <form id="profileForm" class="form-grid mt-md">
+            <label>
+              Full name
+              <input type="text" name="fullName" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" />
+            </label>
+            <label>
+              City
+              <input type="text" name="city" />
+            </label>
+            <label>
+              Role / lifestyle
+              <input type="text" name="role" />
+            </label>
+            <label class="full">
+              Favorite brew
+              <select name="favoriteBrew">
+                <option>Matcha</option>
+                <option>Espresso</option>
+                <option>Filter coffee</option>
+                <option>Cold brew</option>
+              </select>
+            </label>
+            <label class="full">
+              Notes
+              <textarea rows="4" name="notes" placeholder="Preferences and delivery notes"></textarea>
+            </label>
+            <button class="btn btn-primary full" type="submit">Save profile</button>
+          </form>
+          <p id="profileFeedback" class="message" aria-live="polite"></p>
+        </article>
+
+        <aside class="summary-card">
+          <h3>Account snapshot</h3>
+          <div class="grid-3">
+            <div class="stat-card"><strong id="profileCartCount">0</strong><span>Cart items</span></div>
+            <div class="stat-card"><strong id="profileWishCount">0</strong><span>Wishlist items</span></div>
+            <div class="stat-card"><strong id="profileOrderCount">0</strong><span>Orders</span></div>
+          </div>
+          <div class="summary-line"><span>Latest order</span><strong id="profileLastOrder">No completed orders yet</strong></div>
+          <a class="btn btn-secondary" href="./checkout.html">Open checkout</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+
+  <script type="module" src="./js/common.js"></script>
+  <script type="module" src="./js/profile.js"></script>
+</body>
+</html>
